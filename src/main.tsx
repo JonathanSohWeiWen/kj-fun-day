@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Board from "./components/board";
 import Chance from "./components/chance";
@@ -52,12 +52,21 @@ const BoardSetting = ({ setLevel }: { setLevel: (value: boolean) => void }) => {
 const Main = () => {
   const [level, setLevel] = useState<boolean | undefined>();
   const [selectedGroup, setSelectedGroup] = useState("");
-  const [playerPosition, setPlayerPosition] = useState<PlayerPositionProps>(
-    level ? UPPER_PRIMARY_STARTING_VALUES : MIDDLE_PRIMARY_STARTING_VALUES
-  );
+  const [playerPosition, setPlayerPosition] = useState<
+    PlayerPositionProps | undefined
+  >();
+
+  useEffect(() => {
+    if (level !== undefined) {
+      setPlayerPosition(
+        level ? UPPER_PRIMARY_STARTING_VALUES : MIDDLE_PRIMARY_STARTING_VALUES
+      );
+    }
+  }, [level]);
+
   console.log(playerPosition);
   if (level === undefined) return <BoardSetting setLevel={setLevel} />;
-  else {
+  else if (playerPosition) {
     return (
       <MainContainer>
         <Board
@@ -90,7 +99,7 @@ const Main = () => {
         </Dashboard>
       </MainContainer>
     );
-  }
+  } else return null;
 };
 
 export default Main;

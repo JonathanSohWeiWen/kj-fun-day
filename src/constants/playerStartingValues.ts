@@ -5,101 +5,101 @@ export const UPPER_PRIMARY_STARTING_VALUES: PlayerPositionProps = {
     color: "red",
     position: 0,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "No Hand Cup Stacker",
     points: 0,
   },
   Truthfulness: {
     color: "blue",
     position: 13,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Mini Basketball",
     points: 0,
   },
   Loyalty: {
     color: "green",
     position: 16,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Backward Bowling",
     points: 0,
   },
   Humility: {
     color: "#49bea2",
     position: 20,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Eraser flip",
     points: 0,
   },
   Faithfulness: {
     color: "#7E00A7",
     position: 399,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Line up",
     points: 0,
   },
   Gentleness: {
     color: "#1A8796",
     position: 413,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Bottle Cap Flick",
     points: 0,
   },
   Generosity: {
     color: "#A5003A",
     position: 415,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Boggle",
     points: 0,
   },
 };
 
 export const MIDDLE_PRIMARY_STARTING_VALUES: PlayerPositionProps = {
-  Compassion: {
+  Love: {
     color: "red",
     position: 0,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "No Hand Cup Stacker",
     points: 0,
   },
-  Truthfulness: {
+  Joy: {
     color: "blue",
     position: 13,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Mini Basketball",
     points: 0,
   },
-  Loyalty: {
+  Hope: {
     color: "green",
     position: 16,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Backward Bowling",
     points: 0,
   },
-  Humility: {
+  Peace: {
     color: "#49bea2",
     position: 20,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Eraser flip",
     points: 0,
   },
-  Faithfulness: {
+  Patience: {
     color: "#7E00A7",
     position: 399,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Line up",
     points: 0,
   },
   Gentleness: {
     color: "#1A8796",
     position: 413,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Bottle Cap Flick",
     points: 0,
   },
-  Generosity: {
+  Faithfulness: {
     color: "#A5003A",
     position: 415,
     rollNumber: 0,
-    currentGame: "",
+    currentGame: "Boggle",
     points: 0,
   },
 };

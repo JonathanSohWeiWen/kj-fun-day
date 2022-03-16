@@ -77,6 +77,7 @@ export const Tile = ({
         hard,
         "START"
       );
+      console.log(validPosition);
       if (validPosition.includes(index)) {
         const game = selectGame(playerPositions);
         setPlayerPosition({

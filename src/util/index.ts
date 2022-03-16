@@ -1,8 +1,5 @@
 import { GAME_LIST } from "../constants/games";
-import {
-  EASY_TILE_POSITIONS,
-  HARD_TILE_POSITIONS,
-} from "../constants/tilePositions";
+import { HARD_TILE_POSITIONS } from "../constants/tilePositions";
 import PlayerPositionProps from "../interface/playerPositions";
 
 export const checkValidPath = (
@@ -11,7 +8,7 @@ export const checkValidPath = (
   hard: boolean,
   prevDirection: "START" | "LEFT" | "RIGHT" | "UP" | "DOWN"
 ): number[] => {
-  const factor = hard ? 15 : 12;
+  const factor = hard ? 21 : 12;
 
   //Base case
   if (rollNumber > 1) {
@@ -50,8 +47,8 @@ export const checkValidPath = (
 };
 
 const checkValidSteps = (hard: boolean, pos: number) => {
-  const grid = hard ? HARD_TILE_POSITIONS : EASY_TILE_POSITIONS;
-  const factor = hard ? 15 : 12;
+  const grid = HARD_TILE_POSITIONS;
+  const factor = 21;
   let up = false,
     down = false,
     left = false,
