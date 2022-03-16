@@ -7,8 +7,8 @@ import Main from "./main";
 function App() {
   return (
     <Routes>
-      <Route path="/dashboard" element={<Main />} />
       <Route path="/" element={<GameList />} />
+      <Route path="/dashboard" element={<Main />} />
       <Route path="/gameDetails/:gameName" element={<GameDetails />} />
     </Routes>
   );
