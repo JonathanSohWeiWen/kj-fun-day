@@ -13,7 +13,7 @@ const MainContainer = styled.div`
 `;
 
 const ListContainer = styled.div`
-  width: 360px;
+  width: 340px;
   display: flex;
   flex-wrap: wrap;
 `;
