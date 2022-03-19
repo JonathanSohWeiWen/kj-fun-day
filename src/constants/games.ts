@@ -172,23 +172,26 @@ export const GAME_LIST: GameDescription[] = [
     instructions: [
       "Line up according to the criteria the game master sets out",
       "The faster you complete each task, the more points you will receive",
-    ],
-    pointSystem: { upperPrimary: "20 points for every task cleared" },
-  },
-  {
-    name: "Charades",
-    requiresFacilitator: false,
-    description:
-      "Children are supposed to guess the word/phrase based on everyone's action.",
-    instructions: [
-      "Guesser goes and sits on a chair opposite the rest of the group.",
-      "Another member of the group (displayer) will hold up the word above the guesser’s head.",
-      "Group acts out the word/phrase.",
-      "Once guessed/skipped, guesser becomes the new displayer and a new child becomes the guesser.",
       "Time limit of 5 minutes",
     ],
-    pointSystem: { upperPrimary: "5 points for every correct guess" },
+    pointSystem: { upperPrimary: "20 points for every task cleared" },
+    examples:
+      "Name alphabetically, height, number of siblings - can play around with age gap, birth position, etc, School name alphabetically, Birthday",
   },
+  // {
+  //   name: "Charades",
+  //   requiresFacilitator: false,
+  //   description:
+  //     "Children are supposed to guess the word/phrase based on everyone's action.",
+  //   instructions: [
+  //     "Guesser goes and sits on a chair opposite the rest of the group.",
+  //     "Another member of the group (displayer) will hold up the word above the guesser’s head.",
+  //     "Group acts out the word/phrase.",
+  //     "Once guessed/skipped, guesser becomes the new displayer and a new child becomes the guesser.",
+  //     "Time limit of 5 minutes",
+  //   ],
+  //   pointSystem: { upperPrimary: "5 points for every correct guess" },
+  // },
   {
     name: "Matching Pairs",
     requiresFacilitator: false,
@@ -424,8 +427,10 @@ export const GAME_LIST: GameDescription[] = [
     ],
     pointSystem: {
       upperPrimary:
-        "Starts with 100 points, -2 points for every wrong character",
+        "Starts with 100 points, -2 points for every wrong character. For every correct symbol at the end +5 points",
     },
+    examples:
+      "Why this teacher make us do such weird things. I very good at texting blindly. xp ^@*%$&*\nWah teacher ask us to do this very difficult. I think very hard to get everything correct! :O @^&*#",
   },
   {
     name: "Five stones",
