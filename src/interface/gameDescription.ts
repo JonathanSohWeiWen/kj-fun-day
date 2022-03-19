@@ -7,4 +7,5 @@ export default interface GameDescription {
     lowerPrimary?: string[];
     upperPrimary?: string;
   };
+  examples?: string;
 }

@@ -42,25 +42,25 @@ export const GAME_LIST: GameDescription[] = [
       upperPrimary: "Time based: 5 points for every 10 seconds",
     },
   },
-  {
-    name: "Mirror the Pose",
-    requiresFacilitator: false,
-    description: "Copy the poses in the photo",
-    instructions: [
-      "The facilitator will show the team a photo which they will then have to recreate. The team has 3 minutes to strategize and 30 seconds to memorize the poses",
-      "After which, they must recreate the photo as accurately as possible and the facilitator will decide if they receive a maximum of 5 points.",
-      "The team will be shown a total of 4 pictures",
-    ],
-    pointSystem: {
-      lowerPrimary: [
-        "10 points: 0-6 points",
-        "20 points: 7-13 points",
-        "30 points: 14-20 points",
-      ],
-      // upperPrimary:
-      //   "points accumulated from all the poses with a maximum of 5 per pose",
-    },
-  },
+  // {
+  //   name: "Mirror the Pose",
+  //   requiresFacilitator: false,
+  //   description: "Copy the poses in the photo",
+  //   instructions: [
+  //     "The facilitator will show the team a photo which they will then have to recreate. The team has 3 minutes to strategize and 30 seconds to memorize the poses",
+  //     "After which, they must recreate the photo as accurately as possible and the facilitator will decide if they receive a maximum of 5 points.",
+  //     "The team will be shown a total of 4 pictures",
+  //   ],
+  //   pointSystem: {
+  //     lowerPrimary: [
+  //       "10 points: 0-6 points",
+  //       "20 points: 7-13 points",
+  //       "30 points: 14-20 points",
+  //     ],
+  //     // upperPrimary:
+  //     //   "points accumulated from all the poses with a maximum of 5 per pose",
+  //   },
+  // },
   {
     name: "Broken Telephone",
     requiresFacilitator: false,
@@ -78,6 +78,8 @@ export const GAME_LIST: GameDescription[] = [
     pointSystem: {
       upperPrimary: "10 points for every correct word",
     },
+    examples:
+      "paper clip, elephant, pencil, farm, present, cookie, chicken, donkey, pig, windmill, cannon, soldier, swimming pool, beach, cleaner, roller coaster",
   },
   // {
   //   name: "Riddle Objective",
@@ -221,6 +223,8 @@ export const GAME_LIST: GameDescription[] = [
       upperPrimary:
         "10 points for each tongue twister that the whole group completes",
     },
+    examples:
+      "Peter Piper picked a peck of pickled pepper. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers, where’s the peck of pickled pepper Peter Piper picked?\nHow much wood would a woodchuck chuck if a woodchuck could chuck wood? He would chuck, he would, as much as he could, and chuck as much wood as a woodchuck would if a woodchuck could chuck wood.\nI thought a thought. But the thought I thought wasn’t the thought I thought I thought. If the thought I thought I thought had been the thought I thought, I wouldn’t have thought so much.\nAmidst the mists and coldest frosts, with stoutest wrists and loudest boasts, he thrusts his fits against the posts, and still insists he sees the ghosts.\nBetty Botter bought some butter but she said the butter’s bitter. If i put it in my batter, it will make my batter bitter but a bit of better butter will make my batter better. So ‘twas better Betty Botter bought a bit of better butter.\nSilly Sally swiftly shooed seven silly sheep. The seven silly sheep Silly Sally shooed Shilly-Shallied South. These sheep shouldn’t sleep in a shack, sheep should sleep in a shed.\nShe sells seashells by the seashore. The shells she sells are surely seashells. So if she sells shells on the seashore, I’m sure she sells seashore shells.",
   },
   {
     name: "Pick up Bean Relay",
@@ -309,7 +313,7 @@ export const GAME_LIST: GameDescription[] = [
     requiresFacilitator: false,
     description: "Children have to guess their given identity",
     instructions: [
-      "Children will each be given an identity",
+      "Children will each be given an identity (real or fictional character)",
       "They will go in a round, to ask a yes/no question to find out their identity",
       "When confident, the player can declare and guess their identity during their turn",
       [
@@ -321,6 +325,8 @@ export const GAME_LIST: GameDescription[] = [
       upperPrimary:
         "Starts with 200 points. Minus 10 points for each round used",
     },
+    examples:
+      "Iron man, Noah, Captain America, Jesus, Batman, Superman, Lee Hsien Loong, Teacher Tong Wah/Andrea (depending on level), Donald Trump, Adam, Eve",
   },
   {
     name: "Eraser flip",
@@ -420,5 +426,101 @@ export const GAME_LIST: GameDescription[] = [
       upperPrimary:
         "Starts with 100 points, -2 points for every wrong character",
     },
+  },
+  {
+    name: "Five stones",
+    requiresFacilitator: false,
+    description:
+      "To complete as many levels of the traditional 5 stones game as possible",
+    instructions: [
+      "Children take turns playing 5 stones. Turn changes when a child fails any part of the level",
+      "Children must complete the whole level before being able to move on to the next one",
+      "The basic steps are:",
+      [
+        "Throw all 5 stones in the air",
+        "Choose and pick up 1 of the stones",
+        "Throw that 1 stone, and while it’s in the air pick up n number of stones (number of stones depends on the level)",
+        "Make sure to catch the stone in the air",
+        "Continue until all the stones have been collected",
+      ],
+      "Levels:",
+      [
+        "Level 1: 1 stone at a time",
+        "Level 2: 2 stones at a time",
+        "Level 3: 3 stones, then 1 stone",
+        "Level 4: all stones",
+        "Level 5: IYKYK",
+      ],
+      "Time limit: 6 minutes",
+    ],
+    pointSystem: {
+      upperPrimary: "+10 points for each level achieved as a group",
+    },
+  },
+  {
+    name: "Chaptek",
+    requiresFacilitator: false,
+    description: "Kick the chaptek in the air as long as possible",
+    instructions: [
+      "Hold the chaptek in the air with one hand at shoulder height",
+      "Drop the chaptek and keep it in the air by kicking it",
+      "Turn ends when the chaptek hits the floor",
+    ],
+    pointSystem: {
+      upperPrimary: "Points: total kicks per group x2",
+    },
+  },
+  {
+    name: "Pick up sticks",
+    requiresFacilitator: false,
+    description: "Pick up individual sticks without moving the other sticks",
+    instructions: [
+      "Spread the sticks on the table by dropping it vertically on the table",
+      "Pick up the stick without any visible movement of the other sticks",
+      "If movement is detected, discard the intended stick, the turn ends and the next child tries",
+      "Everyone gets 1 try",
+    ],
+    pointSystem: {
+      upperPrimary:
+        "Points: number of sticks picked up x number of points based on color",
+    },
+  },
+  {
+    name: "Ball pin",
+    requiresFacilitator: false,
+    description:
+      "Pin the ball as close to the center as possible while being blindfolded",
+    instructions: [
+      "Members will take turns being blindfolded. The first person and will walk to the board from the starting line.",
+      "While blindfolded, they have to try to stick the ball as close to the middle as possible.",
+    ],
+    pointSystem: {
+      lowerPrimary: [
+        "10 points: 1-9 points total for groups of 5, 1-10 for groups of 6, 1-12 for groups of 7",
+        "20 points:10-17 total for groups of 5, 11-20 for groups of 6, 13-24 for groups of 7",
+        "30 points: 18-25 total for groups of 5, 21-30 for groups of 6, 25-35 for groups of 7",
+      ],
+    },
+  },
+  {
+    name: "Word Search",
+    requiresFacilitator: false,
+    description: "To spell as many words in the time limit",
+    instructions: [
+      "There will be a box containing the letters of the alphabet. The facilitator will give them a word that they have to spell.",
+      "The first player will search through the box of letters and find the first letter of the word.",
+      "The player runs with this piece of paper to the opposite end where they have to put the letter down.",
+      "The first player runs back and the next player has to find the next letter of the word and run to the table to continue the word.",
+      "This continues until 3 minutes is up (can increase time for bigger groups)",
+    ],
+    pointSystem: {
+      lowerPrimary: [
+        "10 points: managed to get 1-2 words",
+        "20 points: managed to get 3-4 words",
+        "30 points: managed to get 5-6 words",
+      ],
+    },
+    examples:
+      "after, child, every, half, move, plant, whole, again, children, everybody, hold, poor, floor. beautiful, frightened, skeleton, wonderful, delicious, swimmers",
   },
 ];

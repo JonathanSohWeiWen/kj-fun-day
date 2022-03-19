@@ -17,7 +17,6 @@ const MainContainer = styled.div`
   justify-content: flex-end;
   background-color: white;
   height: 100%;
-  margin-right: 10%;
 `;
 
 const Dashboard = styled.div<{ hard: boolean }>`

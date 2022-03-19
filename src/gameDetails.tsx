@@ -95,6 +95,20 @@ const GameDetails = () => {
             <Text>{game.pointSystem.upperPrimary}</Text>
           </>
         )}
+        {game.examples && (
+          <>
+            <br />
+            <Headers>Examples</Headers>
+            {game.examples.split("\n").map((text) => {
+              return (
+                <>
+                  <Text>{text}</Text>
+                  <br />
+                </>
+              );
+            })}
+          </>
+        )}
       </GameContainer>
     );
   }
