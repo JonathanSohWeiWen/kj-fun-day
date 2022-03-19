@@ -1,5 +1,6 @@
 import { GAME_LIST } from "../constants/games";
 import { HARD_TILE_POSITIONS } from "../constants/tilePositions";
+import GameDescription from "../interface/gameDescription";
 import PlayerPositionProps from "../interface/playerPositions";
 
 export const checkValidPath = (
@@ -76,11 +77,13 @@ export const selectGame = (playerPositions: PlayerPositionProps) => {
   const currentGames = groups.map((group) => {
     return playerPositions[group].currentGame;
   });
-  let validGame = false;
-  let selectedGame = "";
-  while (!validGame) {
-    selectedGame = GAME_LIST[Math.floor(Math.random() * 19)].name;
-    if (!currentGames.includes(selectedGame)) validGame = true;
+  let selectedGame: GameDescription | undefined = undefined;
+  while (true) {
+    selectedGame = GAME_LIST[Math.floor(Math.random() * GAME_LIST.length)];
+    if (
+      !currentGames.includes(selectedGame.name) &&
+      selectedGame.pointSystem.upperPrimary !== undefined
+    )
+      return selectedGame?.name;
   }
-  return selectedGame;
 };

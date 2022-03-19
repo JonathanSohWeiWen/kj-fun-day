@@ -57,8 +57,8 @@ export const GAME_LIST: GameDescription[] = [
         "20 points: 7-13 points",
         "30 points: 14-20 points",
       ],
-      upperPrimary:
-        "points accumulated from all the poses with a maximum of 5 per pose",
+      // upperPrimary:
+      //   "points accumulated from all the poses with a maximum of 5 per pose",
     },
   },
   {
@@ -79,18 +79,18 @@ export const GAME_LIST: GameDescription[] = [
       upperPrimary: "10 points for every correct word",
     },
   },
-  {
-    name: "Riddle Objective",
-    requiresFacilitator: false,
-    description: "The group has to guess as many riddles as possible.",
-    instructions: [
-      "The gamemaster tells the group a riddle describing a pre-selected object in the room.",
-      "The group gets some time to guess it right.",
-      "If the time limit is up and they can’t figure it out, move on to the next riddle.",
-      "At the end of the game, see how many riddles they have guessed right.",
-    ],
-    pointSystem: { upperPrimary: "10 points for every correct item" },
-  },
+  // {
+  //   name: "Riddle Objective",
+  //   requiresFacilitator: false,
+  //   description: "The group has to guess as many riddles as possible.",
+  //   instructions: [
+  //     "The gamemaster tells the group a riddle describing a pre-selected object in the room.",
+  //     "The group gets some time to guess it right.",
+  //     "If the time limit is up and they can’t figure it out, move on to the next riddle.",
+  //     "At the end of the game, see how many riddles they have guessed right.",
+  //   ],
+  //   pointSystem: { upperPrimary: "10 points for every correct item" },
+  // },
   {
     name: "No Hand Cup Stacker",
     requiresFacilitator: false,
@@ -104,23 +104,23 @@ export const GAME_LIST: GameDescription[] = [
     ],
     pointSystem: { upperPrimary: "15 points for each level" },
   },
-  {
-    name: "Fingertip Hula Hoop",
-    requiresFacilitator: false,
-    description: "Raise the Hula Hoop with just their fingertips as a group.",
-    instructions: [
-      "All members must have only their fingertip touching the hula hoop and to raise it to 1m high.",
-      "Once any member’s finger loses contact with the hula hoop, they have to restart from the bottom",
-    ],
-    pointSystem: {
-      lowerPrimary: [
-        "10 points: able to do it",
-        "20 points: able to do it with only 3-4 resets",
-        "30 points: able to do it with 0-2 resets",
-      ],
-      upperPrimary: "Starts with 100 points. -10 points for every reset",
-    },
-  },
+  // {
+  //   name: "Fingertip Hula Hoop",
+  //   requiresFacilitator: false,
+  //   description: "Raise the Hula Hoop with just their fingertips as a group.",
+  //   instructions: [
+  //     "All members must have only their fingertip touching the hula hoop and to raise it to 1m high.",
+  //     "Once any member’s finger loses contact with the hula hoop, they have to restart from the bottom",
+  //   ],
+  //   pointSystem: {
+  //     lowerPrimary: [
+  //       "10 points: able to do it",
+  //       "20 points: able to do it with only 3-4 resets",
+  //       "30 points: able to do it with 0-2 resets",
+  //     ],
+  //     upperPrimary: "Starts with 100 points. -10 points for every reset",
+  //   },
+  // },
   {
     name: "Mini Basketball",
     requiresFacilitator: false,
@@ -141,21 +141,28 @@ export const GAME_LIST: GameDescription[] = [
       "Bowling must be done backwards, where player faces away from the pins at all times",
       "Time limit of 6 minutes",
     ],
-    pointSystem: { upperPrimary: "2 points for every pin knocked down" },
-  },
-  {
-    name: "Blinded jigsaw",
-    requiresFacilitator: false,
-    description: "To complete the jigsaw blindfolded with the help of friends.",
-    instructions: [
-      "One member is blindfolded and required to complete the jigsaw puzzle with his team members giving him verbal instruction",
-      "The team members are not allowed to touch the blindfolded member or any of the jigsaw.",
-      "Time limit of 5 minutes",
-    ],
     pointSystem: {
-      upperPrimary: "Starts with 200 points. -2 points for every second used",
+      lowerPrimary: [
+        "Average of 1-3 pins knocked down for the group: 10 points",
+        "Average of 4-7 pins knocked down for the group: 20 points",
+        "Average of 8-10 pins knocked down for the group: 30 points",
+      ],
+      upperPrimary: "2 points for every pin knocked down",
     },
   },
+  // {
+  //   name: "Blinded jigsaw",
+  //   requiresFacilitator: false,
+  //   description: "To complete the jigsaw blindfolded with the help of friends.",
+  //   instructions: [
+  //     "One member is blindfolded and required to complete the jigsaw puzzle with his team members giving him verbal instruction",
+  //     "The team members are not allowed to touch the blindfolded member or any of the jigsaw.",
+  //     "Time limit of 5 minutes",
+  //   ],
+  //   pointSystem: {
+  //     upperPrimary: "Starts with 200 points. -2 points for every second used",
+  //   },
+  // },
   {
     name: "Line up",
     requiresFacilitator: false,
@@ -240,7 +247,10 @@ export const GAME_LIST: GameDescription[] = [
       "A total of 10 tries (children can repeat)",
       "Points are for each bottle cap touching the finish line",
     ],
-    pointSystem: { upperPrimary: "50 points for every bottle cap on the line" },
+    pointSystem: {
+      lowerPrimary: ["Zone 1: 2 points", "Zone 2: 5 points, Zone 3: 10 points"],
+      upperPrimary: "50 points for every bottle cap on the line",
+    },
   },
   {
     name: "Jenga Bomb",
@@ -257,24 +267,24 @@ export const GAME_LIST: GameDescription[] = [
       upperPrimary: "If the tower collapses, group minus 50 points",
     },
   },
-  {
-    name: "Word Jigsaw",
-    requiresFacilitator: false,
-    description: "Arrange the words/letters in order in the fastest time",
-    instructions: [
-      "Strips of paper with words/letters on them are given to the children. Children are supposed to arrange it in accordance to the memory verse",
-      "Memory verse reference is only given 1 minute into the game",
-      "Reference to the bible is only allowed 3 minutes into the game",
-      [
-        "P3/P4: cut and jumble according to individual words",
-        "P5/P6: cut and jumble according to every 3 characters. E.g. Jesus is broken up into Jes & us[space]",
-      ],
-    ],
-    pointSystem: {
-      upperPrimary:
-        "Starts with 200 points. Minus 5 points for every 10 seconds",
-    },
-  },
+  // {
+  //   name: "Word Jigsaw",
+  //   requiresFacilitator: false,
+  //   description: "Arrange the words/letters in order in the fastest time",
+  //   instructions: [
+  //     "Strips of paper with words/letters on them are given to the children. Children are supposed to arrange it in accordance to the memory verse",
+  //     "Memory verse reference is only given 1 minute into the game",
+  //     "Reference to the bible is only allowed 3 minutes into the game",
+  //     [
+  //       "P3/P4: cut and jumble according to individual words",
+  //       "P5/P6: cut and jumble according to every 3 characters. E.g. Jesus is broken up into Jes & us[space]",
+  //     ],
+  //   ],
+  //   pointSystem: {
+  //     upperPrimary:
+  //       "Starts with 200 points. Minus 5 points for every 10 seconds",
+  //   },
+  // },
   {
     name: "Boggle",
     requiresFacilitator: false,
@@ -327,7 +337,7 @@ export const GAME_LIST: GameDescription[] = [
   },
   {
     name: "Spinning erasers",
-    requiresFacilitator: true,
+    requiresFacilitator: false,
     description:
       "Children must spin their erasers. The eraser that last the longest wins",
     instructions: [
@@ -335,7 +345,80 @@ export const GAME_LIST: GameDescription[] = [
       "When ready, everyone spins their eraser at the same time",
     ],
     pointSystem: {
-      upperPrimary: "20, 15, 10 points are given to the top 3 respectively",
+      upperPrimary:
+        "Calculate the average of all the eraser spinning durations: Points = average number of seconds x 3",
+    },
+  },
+  {
+    name: "Bible flipping",
+    requiresFacilitator: false,
+    description: "Flip to a specific book of the bible as fast as possible",
+    instructions: [
+      "Bible is placed in front of the children - make sure the Bible is closed",
+      "The first child puts the hand on the Bible cover",
+      "A random book is given, and the child needs to flip to that specific book in the bible at",
+      [
+        "Lower primary: any part of that specific book",
+        "Upper primary: must be at chapter 1",
+      ],
+      "Once completed and verified, the Bible is closed and the next child comes up and places their hand on the Bible cover before a new book is given",
+      "Time limit: 2 minutes",
+      "Please remind the children that even though it is a game, it is still the bible and to be gentle with it",
+    ],
+    pointSystem: {
+      lowerPrimary: [
+        "10 points: 1-3 correct flips",
+        "20 points:4-6 correct flips",
+        "30 points: 6+ correct flips",
+      ],
+      upperPrimary: "5 points for every correct flip",
+    },
+  },
+  {
+    name: "Ninja",
+    requiresFacilitator: true,
+    description: "Eliminate opponent by hitting their batons",
+    instructions: [
+      "Both players start of back against each other",
+      "They will both count down from 3 to 1 and shout “ninja” and the game will start",
+      "Players take turns to go on the offense to attempt to hit the opponents paper baton",
+      "Players on the defense can move away to dodge",
+      "If your baton gets hit, you will lose that baton and can only attack with the remaining baton",
+      "If both baton gets hit out you lose the game",
+      "Game master has 3 lives",
+    ],
+    pointSystem: {
+      upperPrimary: "20 points is awarded to each remaining player",
+    },
+  },
+  {
+    name: "Human knot",
+    requiresFacilitator: false,
+    description: "Untangle the human knot",
+    instructions: [
+      "Group will form a circle reach out and grab one hand of the person in front of you",
+      "Ensure all hands are connected (both left and right hands)",
+      "They will then now have to either go under each others arms or step over to untangle themselves to form a large circle",
+      "There may be certain knots where it may be too difficult to entangle. Group can reset the knot up to 2 times, each time adding 2 minutes to the clock",
+      "Time limit of 10 minutes",
+    ],
+    pointSystem: {
+      upperPrimary: "Starts with 100 points, -10 points for every minute",
+    },
+  },
+  {
+    name: "Blind message",
+    requiresFacilitator: false,
+    description: "Untangle the human knot",
+    instructions: [
+      "Open up a messaging/note taking app and cover up the phone screen above the keyboard (either teacher’s/helper’s phone)",
+      "Children take turns texting the message given to them without looking. Each child has 10 seconds to type as much as possible",
+      "Once the time is up, the phone is then passed onto the next child",
+      "Once the message is completed, reveal the message and see how many mistakes occurred",
+    ],
+    pointSystem: {
+      upperPrimary:
+        "Starts with 100 points, -2 points for every wrong character",
     },
   },
 ];
