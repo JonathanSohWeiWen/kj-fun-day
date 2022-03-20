@@ -418,7 +418,8 @@ export const GAME_LIST: GameDescription[] = [
   {
     name: "Blind message",
     requiresFacilitator: false,
-    description: "Untangle the human knot",
+    description:
+      "Send a text message without looking with as few mistakes as possible",
     instructions: [
       "Open up a messaging/note taking app and cover up the phone screen above the keyboard (either teacher’s/helper’s phone)",
       "Children take turns texting the message given to them without looking. Each child has 10 seconds to type as much as possible",
